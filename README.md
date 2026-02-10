@@ -108,7 +108,7 @@ python DataGenerationScripts/CSVtoData.py
 Fine-tune the YOLO model on the generated dataset.
 
 ```bash
-python train.py --epochs 100
+python train.py
 
 ```
 
