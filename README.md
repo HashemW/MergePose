@@ -15,7 +15,7 @@ This repository contains the dataset generation and training logic for **SARA (S
 
 ## 👥 Authors
 
-**[Your Name]**, **[Advisor Name]**
+**Hashem Wahed**, **Mohammad Nayeem Teli**
 *Submitted to the International Conference on Pattern Recognition (ICPR), 2026.*
 
 ---
@@ -24,15 +24,7 @@ This repository contains the dataset generation and training logic for **SARA (S
 
 The pipeline follows a modular "extraction-fusion-training" workflow designed to handle large-scale video datasets (50GB+).
 
-```mermaid
-graph LR
-    A[Raw Video Dataset] -->|datatoCSV.py| B(Entity Detection & Logging)
-    B --> C[Raw CSV Logs]
-    C -->|CSVtoData.py| D(MergePose Formatting)
-    D --> E[YOLOv8 Dataset]
-    E -->|train.py| F[Final SARA Model]
-
-```
+<img width="1328" height="397" alt="image" src="https://github.com/user-attachments/assets/51d5d86b-364d-4a79-a039-d45ce83adf65" />
 
 ---
 
@@ -54,14 +46,14 @@ The pipeline is designed to be executed sequentially to process raw video into a
 ### 1. Data Preparation
 
 Place your raw video files in a dedicated `dataset/` directory.
-*(Note: The original 50GB dataset is not included in this repository due to size constraints. See `VideoSources.txt` for source attribution.)*
+*(Note: The original 112GB dataset is not included in this repository due to size constraints. See `VideoSources.txt` for source attribution.)*
 
 ### 2. Pose Extraction (Data Generation)
 
 Run the extraction script to detect Horse + Rider entities and log their coordinates to CSV.
 
 ```bash
-python DataGenerationScripts/datatoCSV.py
+python DataGenerationScripts/CSVProducer.py
 
 ```
 
@@ -104,6 +96,5 @@ MergePose/
 
 The pre-trained weights (`best.pt`) and the full proprietary dataset are withheld to protect intellectual property and commercial viability. This repository provides the complete scaffolding to reproduce the data generation process and train your own models using the **MergePose** methodology.
 
-Since you are submitting to ICPR 2026, make sure to replace **[Your Name]** and **[Advisor Name]** with the actual names used in the paper submission. This makes the repo look "official" immediately.
 
 ```
