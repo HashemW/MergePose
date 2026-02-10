@@ -26,11 +26,6 @@ The pipeline follows a modular "extraction-fusion-training" workflow designed to
 
 ---
 
-Here is the revised **Installation** section. I updated it to explicitly warn users about the DeepLabCut (DLC) complexity and recommended using **Conda**, which is the standard "safe" way to handle DLC's fragile dependency tree.
-
-You can replace the previous "Installation" section with this:
-
-```markdown
 ## ⚙️ Installation & Environment Setup
 
 **⚠️ Prerequisite Warning:**
@@ -38,6 +33,7 @@ This pipeline integrates **DeepLabCut (DLC)** with **YOLO**. Installing DeepLabC
 
 ### 1. Create a Conda Environment
 Start with a clean Python 3.8+ environment to avoid conflicts.
+
 ```bash
 conda create -n mergepose python=3.8
 conda activate mergepose
