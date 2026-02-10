@@ -9,8 +9,6 @@
 
 This repository contains the dataset generation and training logic for horse and rider pose detection. It features a streamlined pipeline to ingest raw equestrian footage, extract distinct horse and rider pose metrics, and fuse them into a unified YOLO-formatted dataset for fine-tuning.
 
-🔗 **Project Website / Main Repo:** [SARA-AI](https://github.com/HashemW/SARA)
-
 ---
 
 ## 👥 Authors
